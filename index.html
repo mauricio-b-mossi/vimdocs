@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VimDocs - Vim for Google Docs</title>
+    <meta name="description"
+        content="Bring the power of Vim keybindings to Google Docs with real-time synergy and a sleek neon-dark editing experience.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;700;900&family=Geist+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="glow-orb"></div>
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="logo-container">
+                <i data-lucide="terminal" class="logo-icon"></i>
+            </div>
+            <h1 class="hero-title">VimDocs</h1>
+            <p class="hero-subtitle">Modal editing speed, natively bound to Google Docs.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary" id="installBtn">
+                    <i data-lucide="chrome" class="btn-icon"></i>
+                    Add to Chrome
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    Explore Features
+                </a>
+            </div>
+        </header>
+
+        <!-- Features -->
+        <section id="features" class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon-wrapper"><i data-lucide="keyboard"></i></div>
+                <h3>Modal Editing</h3>
+                <p>Seamlessly toggle between Normal, Insert, and Visual modes. Navigate and edit text without ever
+                    reaching for the mouse.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper"><i data-lucide="zap"></i></div>
+                <h3>Real-Time Synergy</h3>
+                <p>Configure your custom keybindings in the dashboard and watch them sync instantly across all your open
+                    Google Docs tabs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper"><i data-lucide="shield"></i></div>
+                <h3>Native Pass-Through</h3>
+                <p>System features like Clipboard and Search are delegated to native OS shortcuts to bypass browser
+                    sandbox limitations.</p>
+            </div>
+        </section>
+
+        <!-- Usage Guide -->
+        <section id="usage" class="usage-section">
+            <h2 class="section-title">Command Overview</h2>
+            <div class="glass-panel commands-container">
+                <div class="command-group">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd> Move cursor</li>
+                        <li><kbd>w</kbd> <kbd>e</kbd> <kbd>b</kbd> Word selection</li>
+                        <li><kbd>0</kbd> <kbd>$</kbd> Start / End of Line</li>
+                        <li><kbd>g</kbd> <kbd>g</kbd> Start of File</li>
+                        <li><kbd>G</kbd> End of File</li>
+                    </ul>
+                </div>
+                <div class="command-group">
+                    <h4>Editing</h4>
+                    <ul>
+                        <li><kbd>i</kbd> <kbd>a</kbd> Insert / Append</li>
+                        <li><kbd>o</kbd> <kbd>O</kbd> Open new line</li>
+                        <li><kbd>d</kbd> <kbd>w</kbd> Delete word</li>
+                        <li><kbd>c</kbd> <kbd>i</kbd> <kbd>w</kbd> Change inner word</li>
+                        <li><kbd>u</kbd> Undo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations / Transparency -->
+        <section class="limitations-section">
+            <div class="glass-panel warning-panel">
+                <div class="warning-header">
+                    <i data-lucide="info" class="warning-icon"></i>
+                    <h3>Design Boundaries</h3>
+                </div>
+                <p>Due to iframe security in Google Docs, <strong>Yanking / Pasting (<kbd>y</kbd>,
+                        <kbd>p</kbd>)</strong> and <strong>Search
+                        (<kbd>/</kbd>, <kbd>?</kbd>, <kbd>n</kbd>, <kbd>N</kbd>)</strong> commands act as
+                    short-circuits. They will safely abort any ongoing
+                    operations and display a toast guiding you to use native system shortcuts like
+                    <strong>Ctrl+C / Ctrl+V</strong> or <strong>Ctrl+F / Ctrl+G</strong>.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 VimDocs. Open Source and built for speed.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
