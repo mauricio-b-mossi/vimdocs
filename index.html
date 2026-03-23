@@ -33,8 +33,9 @@
                     <i data-lucide="chrome" class="btn-icon"></i>
                     Add to Chrome
                 </a>
-                <a href="#features" class="btn btn-secondary">
-                    Explore Features
+                <a href="reference.html" class="btn btn-secondary">
+                    <i data-lucide="book" class="btn-icon"></i>
+                    Command Reference
                 </a>
                 <a href="https://github.com/mauricio-b-mossi/google_docs_vim" target="_blank" rel="noopener noreferrer"
                     class="btn btn-secondary github-btn">
@@ -66,60 +67,7 @@
             </div>
         </section>
 
-        <!-- Usage Guide -->
-        <section id="usage" class="usage-section">
-            <h2 class="section-title">Command Overview</h2>
-            <div class="glass-panel commands-container">
-                <div class="command-group">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd> Move cursor</li>
-                        <li><kbd>w</kbd> <kbd>e</kbd> <kbd>b</kbd> Word selection</li>
-                        <li><kbd>0</kbd> <kbd>$</kbd> Start / End of Line</li>
-                        <li><kbd>g</kbd> <kbd>g</kbd> Start of File</li>
-                        <li><kbd>G</kbd> End of File</li>
-                    </ul>
-                </div>
-                <div class="command-group">
-                    <h4>Editing</h4>
-                    <ul>
-                        <li><kbd>i</kbd> <kbd>a</kbd> Insert / Append</li>
-                        <li><kbd>o</kbd> <kbd>O</kbd> Open new line</li>
-                        <li><kbd>d</kbd> <kbd>w</kbd> Delete word</li>
-                        <li><kbd>c</kbd> <kbd>i</kbd> <kbd>w</kbd> Change inner word</li>
-                        <li><kbd>s</kbd> <kbd>S</kbd> Substitute</li>
-                        <li><kbd>r</kbd> Replace char</li>
-                        <li><kbd>J</kbd> Join lines</li>
-                        <li><kbd>&gt;&gt;</kbd> <kbd>&lt;&lt;</kbd> Indent</li>
-                        <li><kbd>u</kbd> Undo</li>
-                    </ul>
-                </div>
-                <div class="command-group" style="margin-top: 1.5rem;">
-                    <h4>Multipliers</h4>
-                    <ul>
-                        <li><kbd>3</kbd> <kbd>w</kbd> Move 3 words</li>
-                        <li><kbd>2</kbd> <kbd>d</kbd> <kbd>d</kbd> Delete 2 lines</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- Limitations / Transparency -->
-        <section class="limitations-section">
-            <div class="glass-panel warning-panel">
-                <div class="warning-header">
-                    <i data-lucide="info" class="warning-icon"></i>
-                    <h3>Design Boundaries</h3>
-                </div>
-                <p>Due to iframe security in Google Docs, <strong>Yanking / Pasting (<kbd>y</kbd>,
-                        <kbd>p</kbd>)</strong> and <strong>Search
-                        (<kbd>/</kbd>, <kbd>?</kbd>, <kbd>n</kbd>, <kbd>N</kbd>)</strong> commands act as
-                    short-circuits. They will safely abort any ongoing
-                    operations and display a toast guiding you to use native system shortcuts like
-                    <strong>Ctrl+C / Ctrl+V</strong> or <strong>Ctrl+F / Ctrl+G</strong>.
-                </p>
-            </div>
-        </section>
 
     </main>
 
